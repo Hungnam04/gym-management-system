@@ -1,0 +1,594 @@
+.management-shell {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 254px minmax(0, 1fr);
+  background: #f3f5ef;
+}
+.management-sidebar {
+  background: #182116;
+  color: #c7d0bd;
+  height: 100dvh;
+  position: sticky;
+  top: 0;
+  padding: 30px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 40;
+}
+.management-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 25px;
+}
+.management-brand .logo {
+  color: white;
+}
+.management-space {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 0 12px 33px;
+  color: #d4f34a;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff17;
+}
+.management-space span {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+.management-nav-label {
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: #7d8d70;
+  padding-left: 15px;
+  margin-bottom: 13px;
+}
+.management-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.management-sidebar nav button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 14px 15px;
+  color: #a9b79c;
+  font-size: 11px;
+}
+.management-sidebar nav button:hover {
+  background: #ffffff08;
+  color: white;
+}
+.management-sidebar nav button.active {
+  background: #d4f34a;
+  color: #253316;
+  font-weight: 700;
+}
+.management-sidebar nav button > svg {
+  flex-shrink: 0;
+}
+.management-sidebar nav button i {
+  margin-left: auto;
+  width: 5px;
+  height: 5px;
+  background: #536b20;
+  border-radius: 50%;
+}
+.management-sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: auto;
+  padding: 28px 12px 0;
+}
+.management-sidebar-footer a,
+.management-sidebar-footer button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 11px;
+}
+.management-sidebar-footer a {
+  justify-content: space-between;
+  border-top: 1px solid #ffffff17;
+  padding-top: 22px;
+}
+.management-sidebar-footer button {
+  color: #a4b196;
+}
+.management-sidebar-footer button:hover {
+  color: #d4f34a;
+}
+.management-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.management-topbar {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 34px;
+  background: white;
+  border-bottom: 1px solid #e3e8da;
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  font-size: 12px;
+  font-weight: 600;
+}
+.management-breadcrumb {
+  color: #8c9782;
+  font-weight: 400;
+  margin-left: 12px;
+}
+.management-account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+.management-avatar {
+  width: 38px;
+  height: 38px;
+  background: #e7efce;
+  display: grid;
+  place-items: center;
+  color: #738432;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.management-account strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+}
+.management-account small {
+  display: block;
+  color: #89947c;
+  font-size: 9px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+.management-body {
+  padding: 34px;
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  flex: 1;
+}
+.management-body .workspace-heading h1 {
+  font-size: 28px;
+}
+.management-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 34px;
+  color: #8c977f;
+  font-size: 9px;
+}
+.management-menu,
+.management-close,
+.management-backdrop {
+  display: none;
+}
+.admin-overview-intro {
+  background: #27391d;
+  border-radius: 10px;
+  padding: 29px 34px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 24px;
+}
+.admin-overview-intro .eyebrow {
+  color: #d4f34a;
+  font-size: 8px;
+  margin-bottom: 14px;
+}
+.admin-overview-intro h2 {
+  font-size: 29px;
+  letter-spacing: -0.9px;
+  line-height: 1.35;
+}
+.admin-overview-intro p:not(.eyebrow) {
+  color: #afbea1;
+  font-size: 11px;
+  margin-top: 14px;
+}
+.admin-overview-intro > svg {
+  color: #d4f34a;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.admin-quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  margin-bottom: 24px;
+}
+.admin-quick-links > a {
+  background: white;
+  border: 1px solid #dfe6d6;
+  border-radius: 7px;
+  padding: 21px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.admin-quick-links > a:hover {
+  border-color: #a7bd77;
+}
+.quick-link-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #f1f5e6;
+  color: #829c42;
+  border-radius: 7px;
+}
+.admin-quick-links > a > div {
+  flex: 1;
+}
+.admin-quick-links strong {
+  display: block;
+  font-size: 24px;
+  line-height: 1;
+}
+.admin-quick-links div > span {
+  display: block;
+  color: #859278;
+  font-size: 10px;
+  margin-top: 8px;
+}
+.admin-quick-links > a > svg {
+  color: #8d9a7e;
+}
+.account-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.account-avatar {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 13px;
+}
+.role-pill {
+  padding: 5px 9px;
+  display: inline-block;
+  font-size: 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.role-admin {
+  background: #e9e7f7;
+  color: #7061a2;
+}
+.role-member {
+  background: #eaf1dc;
+  color: #6d813e;
+}
+.role-trainer {
+  background: #e4edf8;
+  color: #537da3;
+}
+.account-form-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 11px;
+  color: #869373;
+  padding: 12px;
+  background: #f2f6e8;
+  border-radius: 4px;
+}
+.account-form-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.admin-entry-link {
+  font-size: 11px;
+  color: #78866a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-top: 1px solid #e0e7d5;
+  padding-top: 19px;
+}
+.admin-entry-link:hover {
+  color: #344d1d;
+}
+.admin-login-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100dvh;
+  background: #f8faf4;
+}
+.admin-login-brand {
+  background: #192315;
+  color: white;
+  padding: 48px 11%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.admin-login-brand:after {
+  content: 'TN';
+  position: absolute;
+  bottom: -80px;
+  right: -45px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 380px;
+  transform: skew(-8deg);
+  color: #d4f34a05;
+  pointer-events: none;
+}
+.admin-login-brand > .logo {
+  align-self: flex-start;
+}
+.admin-login-pitch {
+  margin-block: auto;
+  padding-block: 65px;
+  position: relative;
+  z-index: 1;
+}
+.admin-access-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d4f34a;
+  padding: 9px 12px;
+  border: 1px solid #d4f34a30;
+  border-radius: 4px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-bottom: 29px;
+}
+.admin-login-pitch h1 {
+  font-size: clamp(33px, 3.4vw, 53px);
+  font-weight: 800;
+  letter-spacing: -1.7px;
+  line-height: 1.3;
+}
+.admin-login-pitch h1 span {
+  color: #d4f34a;
+}
+.admin-login-pitch > p {
+  color: #a6b798;
+  font-size: 13px;
+  margin-top: 25px;
+  max-width: 380px;
+}
+.admin-login-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 42px;
+}
+.admin-login-benefits > span {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  color: #c2ceba;
+  font-size: 11px;
+}
+.admin-login-benefits svg {
+  width: 20px;
+  color: #94aa75;
+}
+.admin-login-bottom {
+  color: #7c9070;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+.admin-login-form {
+  padding: 44px 12%;
+  display: flex;
+  flex-direction: column;
+}
+.admin-login-form > .text-link {
+  align-self: flex-start;
+  color: #7d8a70;
+  font-size: 11px;
+}
+.admin-login-box {
+  margin-block: auto;
+  padding-block: 45px;
+  max-width: 430px;
+  width: 100%;
+  align-self: center;
+}
+.admin-lock-icon {
+  width: 57px;
+  height: 57px;
+  display: grid;
+  place-items: center;
+  background: #eaf1d8;
+  color: #7d9444;
+  border-radius: 13px;
+  margin-bottom: 25px;
+}
+.admin-login-box .eyebrow {
+  font-size: 9px;
+  color: #8b987a;
+  margin-bottom: 13px;
+}
+.admin-login-box h2 {
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: -0.9px;
+}
+.admin-login-box > p.muted {
+  font-size: 12px;
+  margin-top: 12px;
+}
+.admin-login-note {
+  text-align: center;
+  color: #8b967e;
+  font-size: 10px !important;
+}
+.admin-login-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 1200px) {
+  .management-shell {
+    grid-template-columns: 228px minmax(0, 1fr);
+  }
+  .management-body {
+    padding: 27px;
+  }
+  .management-sidebar {
+    padding-inline: 13px;
+  }
+  .admin-quick-links {
+    gap: 12px;
+  }
+  .admin-quick-links > a {
+    padding: 16px;
+    gap: 11px;
+  }
+  .admin-quick-links > a > svg {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .management-shell {
+    display: block;
+  }
+  .management-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 254px;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition:
+      transform 0.2s,
+      visibility 0.2s;
+    z-index: 60;
+  }
+  .management-sidebar.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .management-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0d180db0;
+    z-index: 55;
+  }
+  .management-menu,
+  .management-close {
+    display: inline-flex;
+  }
+  .management-main {
+    min-height: 100dvh;
+  }
+  .management-topbar {
+    padding-inline: 24px;
+  }
+  .admin-login-brand {
+    padding-inline: 9%;
+  }
+  .admin-login-form {
+    padding-inline: 9%;
+  }
+}
+@media (max-width: 700px) {
+  .management-topbar {
+    min-height: 72px;
+    padding: 12px 15px;
+  }
+  .management-topbar > div > span {
+    font-size: 11px;
+  }
+  .management-breadcrumb {
+    display: none;
+  }
+  .management-account > span:last-child {
+    display: none;
+  }
+  .management-body {
+    padding: 24px 14px;
+  }
+  .management-body .workspace-heading h1 {
+    font-size: 25px;
+  }
+  .management-footer {
+    padding: 17px;
+    font-size: 8px;
+  }
+  .admin-overview-intro {
+    padding: 23px;
+  }
+  .admin-overview-intro h2 {
+    font-size: 25px;
+  }
+  .admin-overview-intro > svg {
+    display: none;
+  }
+  .admin-quick-links {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+  .admin-quick-links > a {
+    padding: 16px 20px;
+  }
+  .admin-quick-links strong {
+    font-size: 22px;
+  }
+  .admin-quick-links > a > svg {
+    display: block;
+  }
+  .admin-login-page {
+    grid-template-columns: 1fr;
+  }
+  .admin-login-brand {
+    padding: 24px;
+  }
+  .admin-login-pitch,
+  .admin-login-bottom {
+    display: none;
+  }
+  .admin-login-brand:after {
+    content: none;
+  }
+  .admin-login-form {
+    padding: 25px;
+    min-height: calc(100dvh - 92px);
+  }
+  .admin-login-box {
+    padding-block: 35px;
+  }
+  .admin-login-box h2 {
+    font-size: 28px;
+  }
+  .admin-login-box input {
+    font-size: 16px;
+  }
+}
