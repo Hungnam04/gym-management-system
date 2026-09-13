@@ -277,6 +277,14 @@ Các test kiểm tra phân quyền, CSRF, xác nhận thanh toán lặp, snapsho
 - Địa chỉ, điện thoại, nhân sự và nội dung demo cần thay bằng dữ liệu thực tế. Hiển thị rõ đây là dữ liệu minh họa.
 - Hai ảnh chính lưu local. Một số ảnh minh họa và Google Fonts tải từ Internet; ảnh có fallback về ảnh phòng tập local, font có fallback sans-serif.
 
+## Quy ước quản lý mã nguồn theo Scrum
+
+- Nhánh chính: `main`.
+- Nhánh chức năng sử dụng dạng `feature/<ten-chuc-nang>`.
+- Mỗi commit cần gắn với mã PBI tương ứng để truy vết công việc.
+- Ví dụ commit: `(PBI-012) Add Scrum Git traceability documentation`.
+- Thay đổi trên nhánh chức năng được kiểm tra trước khi hợp nhất vào `main`.
+
 ## Nguồn ảnh và tài liệu
 
 - [Ảnh phòng tập — Unsplash](https://unsplash.com/photos/a-gym-with-a-row-of-exercise-machines-rbSNsoXk-3A).
